@@ -47,15 +47,13 @@ function Alldisplay() {
     var ans = confirm('今までの発見をすべて表示しますか？')
     if (ans) {
         $('newMemo').value = '';
-        var s = '<div class="table-responsive"><table class="table">';
+        var s = '<div class="line-bc">';
         for (var i = 0; i < temp.length; i++) {
-            var btn = '<img src="./item/delete_mark.jpeg" onclick="removeMemo(' + i + ')">';
-            s += '<tr class="c_tr"><td class="c_td1">' +
-                temp[i] + '</td><td class="c_td2">' + btn +
-                '</td></tr>';
+            var btn = '<img src="./item/delete_mark.png" onclick="removeMemo(' + i + ')">';
+            s += '<div class="mycomment"><p>' + temp[i] + '</p>' + btn + '</div>';
         }
 
-        s += '</table></div>';
+        s += '</div>';
         $('disp').innerHTML = s;
     }
 }
