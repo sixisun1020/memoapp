@@ -11,10 +11,18 @@
 .font {
     font-family: DQfont;
 }
+@media screen and (max-width:480px) {
+    .wrap {
+        background: url(../item/sakaba_smt.jpg) no-repeat center;
+        background-size: cover;
+    }
+}
+@media screen and (min-width:480px){
 
-.wrap {
-    background: url(../item/sakaba.jpg) no-repeat center;
-    background-size: cover;
+    .wrap {
+        background: url(../item/sakaba.jpg) no-repeat center;
+        background-size: cover;
+    }
 }
 
 .title {
