@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'DQfont';
+    src: url(../font/PixelMplus10-Regular.ttf);
+}
+
+.body {    
+    margin: 0;
+    padding: 0;
+}
+
+.font {
+    font-family: DQfont;
+}
+
+.wrap {
+    background: url(../item/sakaba.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    color: whitesmoke;
+}
+
+.imageArea {
+    margin-top:200px;
+}
+
+
+.inputArea {
+    display: table;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.sameHeight {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.list-table {
+    text-align: center;
+}
+
+.wrap-color {
+    background: #7da4cd;
+}
+
+/** 吹き出し */
+.line-bc {
+    padding: 20px 10px;
+    max-width: 100%;
+    margin: 15px auto;
+    text-align: right;
+    font-size: 14px;
+
+}
+
+.mycomment {
+    margin: 10px 0;
+}
+
+.mycomment p {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px 0 0;
+    padding: 8px;
+    max-width: 50%;
+    border-radius: 12px;
+    background: #30e852;
+    font-size: 15px;
+}
+
+.mycomment p:after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: -19px;
+    border: 8px solid transparent;
+    border-left: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+}
+

@@ -1,0 +1,30 @@
+.blackboard {
+	position: relative;
+	margin: 0 auto 1.5rem;
+	padding: 1.6rem 1rem;
+	font-size: 1.2rem;
+	color: #fff;
+	border: 2px solid #000;
+	border-radius: 5px;
+	box-shadow: 0 0 0 4px #fff inset;
+	background-color: rgba(0,0,0,0.9);
+   }
+   .blackboard.answer p {
+	margin-left: 1.7rem;
+   }
+   .blackboard .blink-before {
+	font-size: 1.2rem;
+   }
+   .blackboard a {
+	text-decoration: none;
+	color: #fff;
+   }
+   .blackboard .blink-before::before {
+	content: '▶';
+	position: absolute;
+	left: 1rem;
+	animation: blink 1.4s infinite;
+   }
+   .blackboard p:last-of-type {
+	margin-bottom: 0;
+   }
