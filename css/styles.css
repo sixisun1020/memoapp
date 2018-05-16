@@ -3,9 +3,15 @@
     src: url(../font/PixelMplus10-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'myfont_jp';
+    src: url(../font/Kaiso-Next-B.otf);
+}
+
 .body {    
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .font {
@@ -51,42 +57,22 @@
 }
 
 .wrap-color {
-    background: #7da4cd;
+    background: url('../item/p0442_l.png') no-repeat center;
+    background-size: cover;
+    padding-top:0;
+    margin-top:0;
+    height: 100%;
 }
 
-/** 吹き出し */
-.line-bc {
-    padding: 20px 10px;
-    max-width: 100%;
-    margin: 15px auto;
-    text-align: right;
-    font-size: 14px;
-
+.wrap-color-text  {
+    width: 75%;
+    font-family: 'myfont_jp';
+    background: white;
+    opacity: 0.7;
 }
 
-.mycomment {
-    margin: 10px 0;
+#disp{
+    padding: 20px 0 15px 0;
 }
 
-.mycomment p {
-    display: inline-block;
-    position: relative;
-    margin: 0 10px 0 0;
-    padding: 8px;
-    max-width: 50%;
-    border-radius: 12px;
-    background: #30e852;
-    font-size: 15px;
-}
-
-.mycomment p:after{
-    content: '';
-    position: absolute;
-    top: 3px;
-    right: -19px;
-    border: 8px solid transparent;
-    border-left: rotate(-35deg);
-    -webkit-transform: rotate(-35deg);
-    transform: rotate(-35deg);
-}
 

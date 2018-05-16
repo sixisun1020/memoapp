@@ -35,8 +35,8 @@ function display() {
         else if (i >= temp.length) {
             break;
         }
-        var btn = '<img src="./item/delete_mark.png" onclick="removeMemo(' + i + ')">';
-        s += '<div class="mycomment"><p>' + temp[i] + '</p>' + btn + '</div>';
+        var btn = '<img class="ml-3" src="./item/delete_mark.png" onclick="removeMemo(' + i + ')">';
+        s += '<div class="mycomment"><p>' + temp[i] + btn + '</p>' + '</div>';
     }
     s += '</div>'
     $('disp').innerHTML = s;
