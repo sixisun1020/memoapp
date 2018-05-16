@@ -25,7 +25,7 @@ function addMemo() {
 function display() {
 
     $('newMemo').value = '';
-    var s = '<div class="line-bc">';
+    var s = '<div>';
     for (var i = 0; i < 3; i++) {
         //データなしの場合はループから外れる処理
         if (temp.length == 0) {
@@ -36,7 +36,7 @@ function display() {
             break;
         }
         var btn = '<img class="ml-3" src="./item/delete_mark.png" onclick="removeMemo(' + i + ')">';
-        s += '<div class="mycomment"><p>' + temp[i] + btn + '</p>' + '</div>';
+        s += '<div><p class="mycomment">' + temp[i] + btn + '</p>' + '</div>';
     }
     s += '</div>'
     $('disp').innerHTML = s;
@@ -47,10 +47,10 @@ function Alldisplay() {
     var ans = confirm('今までの発見をすべて表示しますか？')
     if (ans) {
         $('newMemo').value = '';
-        var s = '<div class="line-bc">';
+        var s = '<div>';
         for (var i = 0; i < temp.length; i++) {
-            var btn = '<img src="./item/delete_mark.png" onclick="removeMemo(' + i + ')">';
-            s += '<div class="mycomment"><p>' + temp[i] + '</p>' + btn + '</div>';
+            var btn = '<img class="ml-3" src="./item/delete_mark.png" onclick="removeMemo(' + i + ')">';
+            s += '<div><p class="mycomment">' + temp[i] + btn + '</p>' + '</div>';
         }
 
         s += '</div>';
@@ -117,7 +117,7 @@ function conversation() {
         '明日やろうは馬鹿野郎だ。お前さんは何野郎かな？'];
     var i = Math.floor(Math.random() * comment.length);
     $('says').innerText = comment[i];
-    
+
 }
 
 function $(id) {
