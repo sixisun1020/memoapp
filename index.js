@@ -23,7 +23,7 @@ function addMemo() {
     save();
 }
 function display() {
-
+    $('num').innerText = temp.length;
     $('newMemo').value = '';
     var s = '<div>';
     for (var i = 0; i < 3; i++) {
@@ -123,4 +123,5 @@ function conversation() {
 function $(id) {
     return document.getElementById(id);
 }
+
 

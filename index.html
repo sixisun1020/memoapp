@@ -44,20 +44,24 @@
             <div class="text-center w-100 mt-5">
                 <form submit="return false;">
                     <div class="inputArea">
+                        <p class="text-white">発見したこと</p>
                         <textarea row="5" col="40" class="w-75 sameHeight" id="newMemo"></textarea>
                         <input type="button" id="addBtn" class="sameHeight btn btn-lg btn-outline-light mx-3" value="追加" onclick="addMemo()">
                     </div>
 
                 </form>
-
+                <div class="w-75">
+                    <p class="font-weight-bold text-white text-right score">SCORE：
+                        <span id="num">0</span>
+                    </p>
+                </div>
             </div>
         </div>
 
         <div class="container-fluid my-5 wrap-color-text">
-            <div>
-                <div id="disp" class="text-center ">
 
-                </div>
+            <div id="disp" class="text-center">
+
             </div>
         </div>
 
